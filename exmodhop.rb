@@ -5,6 +5,8 @@ class Exmodhop < Formula
   sha256 "8b4e25026a0db821affcecd973298e40186769f8800bd8cb9ba62449839a8b30"
   version "0.1.0"
 
+  depends_on "rust" => :build
+
   def install
     system "cargo", "install", *std_cargo_args
   end
